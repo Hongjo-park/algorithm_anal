@@ -10,4 +10,6 @@ def inv_mod(a: int, m: int) -> int:
 
 
 if __name__ == '__main__':
-    print(inv_mod(11, 26))
+    z = [(row, inv_mod(row, 26)) for row in range(1, 26) if inv_mod(row, 26)]
+    for row in z:
+        print(row)
