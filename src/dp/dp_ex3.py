@@ -12,7 +12,7 @@ def dp_f(i: int):
         dp[i] = max(dp[0], n_array[i])
     else:
         dp[i] = max(dp[i - 1], dp[i - 2] + n_array[i])
-    
+     
     if i + 1 < n:
         dp_f(i+1)
 
