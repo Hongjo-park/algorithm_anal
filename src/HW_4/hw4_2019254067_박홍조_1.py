@@ -5,7 +5,7 @@ def dfs(row, col):
     if row <= -1 or row >= n or col <= -1 or col >= m:
         return False
     
-    # 맵의 해당 주소가 1이라면 dfs합니다.
+    # 맵의 해당 주소가 0이라면 dfs합니다.
     if not map_array[row][col]:
         # 방문한 곳은 1로 채워줍니다
         map_array[row][col] = 1
